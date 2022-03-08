@@ -3,7 +3,6 @@ session_start();
 require_once "db_connection.php";
 include "header.php";
 $id = $_GET["update"];
-// $unitname =$_GET["unit"];
 $result= mysqli_query($connection, "SELECT * FROM `units` WHERE id='$id'");
 while($row=mysqli_fetch_assoc($result)){
     $unitname = $row["unit"];
@@ -11,19 +10,19 @@ while($row=mysqli_fetch_assoc($result)){
    
 
 }
-if(isset($_GET["update"])){
-$id = $_GET["update"];
-$unit_name = $_POST["unitname"];
-
-    $update= "UPDATE `units` SET `unit`='$unit_name' WHERE id='$id'";
-    $result = mysqli_query($connection,$update);
+if(isset($_POST["save"])){
+  $id=$_GET["update"];
+  $name= $_POST["unitname"];
+    $update= "UPDATE `units` SET `unit`='$name' WHERE id='$id'";
+    $result= mysqli_query($connection,$update);
     if(isset($result)){
 
-        // header ("location:add_new_unit.php");
+      header ("location:add_new_unit.php");
     }else{
-        echo "OOoops!! Update failed !";
+      echo "Ooop! something wrong happenned";
     }
-  }
+     
+}
 ?>
 <!--main-container-part-->
 <div id="content">
@@ -46,7 +45,7 @@ $unit_name = $_POST["unitname"];
         </div>
         <div class="widget-content nopadding">
 
-          <form action="add_new_unit.php" method="post" class="form-horizontal">
+          <form action="" method="post" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">Unit Name :</label>
               <div class="controls">
@@ -57,7 +56,7 @@ $unit_name = $_POST["unitname"];
         
  
             <div class="form-actions">
-              <button type="submit" name="save1" class="btn btn-success">Update</button>
+              <button type="submit" name="save" class="btn btn-success">Update</button>
             </div>
 
             <div class="alert alert-success" id="" name="success"  style="display:none;">
