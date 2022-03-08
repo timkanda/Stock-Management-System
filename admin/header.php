@@ -23,9 +23,6 @@
     </h2>
 </div>
 
-
-
-<!--top-Header-menu-->
 <div id="user-nav" class="navbar navbar-inverse">
     <ul class="nav">
         <li class="dropdown" id="profile-messages">
@@ -40,7 +37,6 @@
     </ul>
 </div>
 
-<!--sidebar-menu-->
 <div id="sidebar">
     <ul>
         <li class="">

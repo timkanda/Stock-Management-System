@@ -1,10 +1,9 @@
-<!--Footer-part-->
+
 
 <div class="row-fluid">
     <div id="footer" class="span12" style="color:white"> Designed And Developed By: Tim Kanda</div>
 </div>
 
-<!--end-Footer-part-->
 
 <script src="js/excanvas.min.js"></script>
 <script src="js/jquery.min.js"></script>

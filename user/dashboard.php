@@ -15,16 +15,14 @@ if(!isset($_SESSION["user"])){
 include "header.php";
 require_once "db_connection.php";
 ?>
-<!--main-container-part-->
+
 <div id="content">
-    <!--breadcrumbs-->
+    
     <div id="content-header">
         <div id="breadcrumb"><a href="dashboard.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>
             Dashboard</a></div>
     </div>
-    <!--End-breadcrumbs-->
-
-    <!--Action boxes-->
+    
     <div class="container-fluid">
 
         <div class="row-fluid" style="...">

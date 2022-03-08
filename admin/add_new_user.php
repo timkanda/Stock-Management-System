@@ -44,14 +44,12 @@ $role = $_POST["role"];
 ?>
 
 <div id="content">
-    <!--breadcrumbs-->
+    
     <div id="content-header">
         <div id="breadcrumb"><a href="add_new_user.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>
             Add New User</a></div>
     </div>
-    <!--End-breadcrumbs-->
-
-    <!--Action boxes-->
+   
     <div class="container-fluid">
 
         <div class="row-fluid" style="background-color: white; min-height: 1000px; padding:10px;">
@@ -131,9 +129,7 @@ $role = $_POST["role"];
               <tbody>
 
               <?php
-              // $selectquery=mysqli_query($connection, "SELECT * FROM user_registration");
-          
-              // while($row=mysqli_fetch_assoc($selectquery))
+              
               $users= "SELECT * FROM user_registration";
               $result= $connection->query($users);
               while($row=$result->fetch_assoc()){

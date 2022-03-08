@@ -7,7 +7,6 @@ $result= mysqli_query($connection, "SELECT * FROM `units` WHERE id='$id'");
 while($row=mysqli_fetch_assoc($result)){
     $unitname = $row["unit"];
     $id=$row["id"];
-   
 
 }
 if(isset($_POST["save"])){
@@ -24,16 +23,13 @@ if(isset($_POST["save"])){
      
 }
 ?>
-<!--main-container-part-->
 <div id="content">
-    <!--breadcrumbs-->
+    
     <div id="content-header">
         <div id="breadcrumb"><a href="edit_unit.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>
             Edit unit</a></div>
     </div>
-    <!--End-breadcrumbs-->
 
-    <!--Action boxes-->
     <div class="container-fluid">
 
         <div class="row-fluid" style="background-color: white; min-height: 1000px; padding:10px;">

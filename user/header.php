@@ -25,7 +25,7 @@
 
 
 
-<!--top-Header-menu-->
+
 <div id="user-nav" class="navbar navbar-inverse">
     <ul class="nav">
         <li class="dropdown" id="profile-messages">
@@ -41,7 +41,7 @@
     </ul>
 </div>
 
-<!--sidebar-menu-->
+
 <div id="sidebar">
     <ul>
         <li class="">
@@ -58,7 +58,7 @@
 
     </ul>
 </div>
-<!--sidebar-menu-->
+
 <div id="search">
 
         <a href="logout.php" style="color:white"><i class="icon icon-share-alt"></i><span>LogOut</span></a>

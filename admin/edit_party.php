@@ -32,7 +32,7 @@ if(isset($_POST["save"])){
       
       $result = mysqli_query($connection,$update);
       if(isset($result)){
-        // echo "Party Info Updated!";
+  
           header ("location:add_new_party.php");
       }else{
           echo "OOoops!! Update failed !";
@@ -42,14 +42,12 @@ if(isset($_POST["save"])){
 ?>
 
 <div id="content">
-    <!--breadcrumbs-->
+    
     <div id="content-header">
         <div id="breadcrumb"><a href="edit_party.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>
             Edit Party Info</a></div>
     </div>
-    <!--End-breadcrumbs-->
-
-    <!--Action boxes-->
+   
     <div class="container-fluid">
 
         <div class="row-fluid" style="background-color: white; min-height: 1000px; padding:10px;">

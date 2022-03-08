@@ -31,14 +31,11 @@ if(isset($_POST["save"])){
 ?>
 
 <div id="content">
-    <!--breadcrumbs-->
     <div id="content-header">
         <div id="breadcrumb"><a href="edit_company.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>
             Edit Company</a></div>
     </div>
-    <!--End-breadcrumbs-->
-
-    <!--Action boxes-->
+    
     <div class="container-fluid">
 
         <div class="row-fluid" style="background-color: white; min-height: 1000px; padding:10px;">

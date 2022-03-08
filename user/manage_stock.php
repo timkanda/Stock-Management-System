@@ -9,14 +9,12 @@ require_once "db_connection.php";
 ?> 
 
 <div id="content">
-    <!--breadcrumbs-->
+    
     <div id="content-header">
         <div id="breadcrumb"><a href="manage_stock.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>
             Manage Stock</a></div>
     </div>
-    <!--End-breadcrumbs-->
-
-    <!--Action boxes-->
+    
     <div class="container-fluid">
 
         <div class="row-fluid" style="">

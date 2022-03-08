@@ -19,16 +19,9 @@ $unit = $row["unit"];
 $packagingsize = $row["packaging_size"];
 
 }
-
-
-// $id = $_GET["update"];
 if(isset($_POST["save"])){
 $id = $_GET["update"];
 
-// $companyname = $_GET["company_name"];
-// $productname = $_GET["product_name"];
-// $unit = $_GET["unit"];
-// $packagingsize = $_GET["packaging_size"];
 
 $companyname = $_POST["company_name"];
 $productname = $_POST["product_name"];
@@ -49,30 +42,16 @@ if (isset($update)){
 }else{
   echo "update failed";
 }
-
-
-//   $result=mysqli_query($connection,"UPDATE  FROM `products` WHERE company_name='$companyname' AND product_name='$productname' AND unit='$unit' AND packaging_size='$packagingsize'") or die(mysqli_error($connection));
-//   $count=mysqli_num_rows($result);
-
-  // if ($count >0){
-
-  //   echo "Product Already Exist";
-  // }else{
-  //   mysqli_query($connection,"INSERT INTO `products` VALUES('Null','$companyname', '$productname', '$unit', '$packagingsize'");
-  //   // mysqli_query($connection, "UPDATE `products` SET `company_name`='$companyname',`product_name`='$productname',`unit`='$unit',`packaging_size`='$packagingsize' WHERE id='$id'");
 }
 
 ?> 
 
 <div id="content">
-    <!--breadcrumbs-->
     <div id="content-header">
         <div id="breadcrumb"><a href="edit_products.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>
             Edit Products</a></div>
     </div>
-    <!--End-breadcrumbs-->
-
-    <!--Action boxes-->
+   
     <div class="container-fluid">
 
         <div class="row-fluid" style="background-color: white; min-height: 1000px; padding:10px;">

@@ -15,7 +15,6 @@ if ($delete) {
 } else {
     echo "Ooop! Something happened!";
 
-    # code...
 }
 
 }else{
